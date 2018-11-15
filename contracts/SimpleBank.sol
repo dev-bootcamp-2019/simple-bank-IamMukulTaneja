@@ -35,7 +35,7 @@ contract SimpleBank {
     /* Use the appropriate global variable to get the sender of the transaction */
     constructor() {
        contractCreator = msg.sender;
-       contractCreator= owner;
+       owner = contractCreator;
         /* Set the owner to the creator of this contract */
     }
 
